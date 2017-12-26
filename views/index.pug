@@ -1,0 +1,16 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(charset="UTF-8")
+    link(rel='stylesheet', href='style.css')
+
+  body
+    div.top
+      div.header 
+        a.title2 Ranking
+
+      div
+        each city in cities
+          a(class='cityBig', href=`${city.name}`)=city.name

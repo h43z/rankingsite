@@ -1,0 +1,24 @@
+html
+  head
+    title= title
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(charset="UTF-8")
+    script.
+      function disapprove(name){
+        var r = new XMLHttpRequest()
+        r.open('POST', '/api/disapprove?pass=bitcorns', true)
+        r.setRequestHeader('Content-Type', 'application/json; charset=utf-8')
+        r.onreadystatechange = function(){
+          if (r.readyState != 4 || r.status != 200) return
+        }
+        r.send(`{"name": "${name}"}`)
+      }
+
+  body
+    h1 admin
+    table
+      each item in all
+        tr
+          td=`${item.name}`
+          td
+            button(onclick='disapprove("' + item.name +'")') disapprove

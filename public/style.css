@@ -1,0 +1,321 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  font-size: 15px;
+  background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+  //box-shadow: 0 7px 60px rgba(62, 9, 11, .3);
+}
+
+.top{
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: black;
+  font-size: 140%;
+  color: white;
+  padding: 20px;
+}
+
+.ranking{
+  width: 100%;
+  padding: 10;
+  font-size: 100%;
+}
+
+.ranking tr:first-child .name {
+  font-size: 1.3em;
+}
+
+.ranking tr:first-child .score {
+  font-size: 1.0em;
+  color:gold;
+}
+
+.ranking tr:first-child .name::after {
+  content: ' \f091';
+  font-family: 'FontAwesome';
+  color: gold;
+}
+
+
+.ranking tr:nth-child(2) .name {
+  font-size: 1.2em;
+}
+
+.ranking tr:nth-child(2) .score {
+  font-size: 1.0em;
+  color:#dadada;
+}
+
+.ranking tr:nth-child(2) .name::after {
+  content: ' \f091';
+  font-family: 'FontAwesome';
+  color:#dadada;
+}
+
+.ranking tr:nth-child(3) .name {
+  font-size: 1.1em;
+}
+
+.ranking tr:nth-child(3) .name::after {
+content: ' \f091';
+font-family: 'FontAwesome';
+color:#aa7f53;
+}
+
+.ranking tr:nth-child(3) .score {
+  font-size: 1.0em;
+  color:#aa7f53;
+}
+
+.name{
+  text-align:right;
+  color: white;
+}
+.name:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: cell;
+}
+
+.score{
+  padding: 5px; 
+  text-align:left;
+  color: white;
+  font-weight: bold;
+}
+
+.city{
+  padding: 5px; 
+  text-align:left;
+  color: white;
+  font-size:80%;
+  text-align:right;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  display: inline;
+  width: 60px;
+}
+
+ul.nav li a{
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+ul.nav.left li a:hover {
+  color: #f39264;
+}
+
+ul.right{
+  float: right;
+}
+ul.left{
+  float: left;
+}
+
+td {
+  margin: 20px;
+}
+
+.header{
+  text-align:center;
+  padding: 20px;
+}
+
+.header > .title1{
+  font-size: 120%;
+  letter-spacing: 2px;
+}
+
+.header > .title2{
+  font-size: 130%;
+  color: gold;
+  font-weight:bold;
+  letter-spacing: 4px;
+}
+
+.header > .city{
+  text-transform: capitalize;
+  font-weight: bold;
+
+}
+.fa.fa-heart-o{
+  color:red;
+}
+
+input.search{
+  flex: 1;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px;
+  border-style: solid;
+  border-color: #f39264;
+  border-width: 1px;
+  font-family: 'FontAwesome', 'Open Sans';
+  height: 70px;
+  margin-right: 10px;
+  font-size: 1em;
+  min-width: 0;
+}
+
+input.search::placeholder{
+  font-size: 50%;
+}
+
+input.submit{
+  text-align:center;
+  height: 70px;
+  cursor: pointer;
+  outline: none;
+  border-style: solid;
+  border-color: #f39264;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: gold;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 10px;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.3);
+  opacity: 0.9; 
+  line-height: 30px;
+}
+
+input.submit:hover{
+  color: #222222;
+  opacity: 1; 
+}
+
+input.submit:active{
+  box-shadow: none !important;
+  line-height: 55px;
+}
+
+input.submit:disabled{
+  opacity: 0.55; 
+  cursor: not-allowed;
+}
+
+.voting{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input{
+  font-family: 'FontAwesome';
+}
+
+nav{
+  padding: 10px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.results{
+  color: white;
+  margin-top:5px;
+  border-radius: 10px;
+  background-color: #f26b6b;
+}
+
+.resultitem{
+  padding: 10px;
+  font-size: 1.1em;
+  text-align:center;
+}
+
+.invalid{
+  color: red;
+}
+
+#stats{
+  font-size: 50%;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+#stats .number{
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.statsheader{
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+.statsbody{
+  text-align:left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.statsbody > div{
+  padding: 4px;
+}
+
+.active{
+  color:black;
+}
+
+.rankheading{
+  text-align: center;
+  margin: 20px 0 0 0;
+  text-transform: capitalize;
+}
+
+.fa-repeat{
+  color: #fefe;
+  font-size: 70%;
+}
+
+.fa-repeat:hover{
+  color: gold;
+}
+
+hr{
+  margin-top: 20px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, white, #f39264);
+}
+
+.year{
+  font-weight: bold;
+  font-size: 130%;
+  letter-spacing: 6px;
+}
+
+.cityBig{
+  letter-spacing: 3px;
+  font-size: 130%;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 30px;
+  display: block;
+}
+
+.cityBig:hover{
+  text-decoration: underline;
+}
