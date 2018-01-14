@@ -9,4 +9,5 @@ Node.js with express framework and pug templating and sqlite3 database and SSE.
 ###### Client
 Vue.js
 
+![gif](https://raw.githubusercontent.com/h43z/rankingsite/master/screencast.gif "gif")
 
